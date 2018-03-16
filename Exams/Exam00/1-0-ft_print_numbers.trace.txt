@@ -1,0 +1,61 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1r6p14.42.fr
+Darwin 16.7.0 x86_64
+$> date
+Fri Feb 16 14:43:52 CET 2018
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.38)
+Target: x86_64-apple-darwin16.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.38)
+Target: x86_64-apple-darwin16.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/bootcamp-joburg-exam-00/exam_20180216/dkolev
+
+= Git history ==================================================================
+$> git -C /var/folders/rm/ygf3y5j92h72r6050n39pvwm0000gq/T/tmppnXGVN/user log --pretty='%H - %an, %ad : %s'
+680eab587634a2f2811e5dc8649d206af97e92fe - Exam 42, Fri Feb 16 15:43:28 2018 +0200 : Assignment 1
+d55b3180f1a96b8d7909a99a42cdba81220351d0 - Exam 42, Fri Feb 16 15:36:21 2018 +0200 : Assignment 0 attempt 2
+5acb72612947f72820f23ed2e0bb5889f1d38e8e - Exam 42, Fri Feb 16 15:30:37 2018 +0200 : Assignment 0
+7d7cdda60bc6310a384b3fc37cd3f5ae3d47f319 - Exam 42, Fri Feb 16 15:28:31 2018 +0200 : test staff
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/rm/ygf3y5j92h72r6050n39pvwm0000gq/T/tmppnXGVN/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  920 Feb 16 14:43 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Feb 16 14:43 ft_print_numbers
+drwxr-xr-x  3 deepthought  deepthought  102 Feb 16 14:43 only_a
+drwxr-xr-x  3 deepthought  deepthought  102 Feb 16 14:43 only_z
+
+/var/folders/rm/ygf3y5j92h72r6050n39pvwm0000gq/T/tmppnXGVN/user/ft_print_numbers:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1091 Feb 16 14:43 ft_print_numbers.c
+
+/var/folders/rm/ygf3y5j92h72r6050n39pvwm0000gq/T/tmppnXGVN/user/only_a:
+total 8
+-rw-r--r--  1 deepthought  deepthought  985 Feb 16 14:43 only_a.c
+
+/var/folders/rm/ygf3y5j92h72r6050n39pvwm0000gq/T/tmppnXGVN/user/only_z:
+total 8
+-rw-r--r--  1 deepthought  deepthought  965 Feb 16 14:43 only_z.c
+ 
+= ft_print_numbers =============================================================
+$> clang -Wextra -Wall -Werror main.c ft_print_numbers.c -o user_exe 
+duplicate symbol _main in:
+    /var/folders/rm/ygf3y5j92h72r6050n39pvwm0000gq/T/main-b41c5f.o
+    /var/folders/rm/ygf3y5j92h72r6050n39pvwm0000gq/T/ft_print_numbers-1fde1c.o
+ld: 1 duplicate symbol for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+Could not compile 'user_exe'
+Grade: 0
+
+= Final grade: 0 ===============================================================

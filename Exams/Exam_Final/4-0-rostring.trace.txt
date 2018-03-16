@@ -1,0 +1,92 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e6r1p3.vp.42.fr
+Darwin 16.7.0 x86_64
+$> date
+Sat Mar 10 12:07:11 CET 2018
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode-beta.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39)
+Target: x86_64-apple-darwin16.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39)
+Target: x86_64-apple-darwin16.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/bootcamp-joburg-final-exam/exam_20180310/dkolev
+
+= Git history ==================================================================
+$> git -C /var/folders/_d/95dm4z8j5pg96y3ysw729hh00000gq/T/tmpETGQH_/user log --pretty='%H - %an, %ad : %s'
+4a94ad88ca8e14766d417f469f3c39d8db6ddad7 - Exam 42, Sat Mar 10 13:07:01 2018 +0200 : Assignment 5
+9f9e0886aa0a4d5c98d35d549bc94e9cf2d463ef - Exam 42, Sat Mar 10 12:00:27 2018 +0200 : Assignment 4 attempt 3
+ebac665aeb8d1c5e68503107cb0176cf0198a019 - Exam 42, Sat Mar 10 10:21:16 2018 +0200 : Assignment 4
+e932c0e373161b20677c13a0ea6f90d3c3f5ab80 - Exam 42, Sat Mar 10 09:19:02 2018 +0200 : Assignment 3
+61b7c4818f82f44e04942d1abc80dd0691c14916 - Exam 42, Sat Mar 10 09:11:15 2018 +0200 : Assignment 1
+e9166aa2f17734c389ae8682c9102218130d3e18 - Exam 42, Sat Mar 10 09:05:19 2018 +0200 : Assignment 0
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/_d/95dm4z8j5pg96y3ysw729hh00000gq/T/tmpETGQH_/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1472 Mar 10 12:07 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Mar 10 12:07 ft_putstr
+drwxr-xr-x  3 deepthought  deepthought   102 Mar 10 12:07 ft_rrange
+drwxr-xr-x  3 deepthought  deepthought   102 Mar 10 12:07 only_z
+drwxr-xr-x  3 deepthought  deepthought   102 Mar 10 12:07 print_bits
+drwxr-xr-x  3 deepthought  deepthought   102 Mar 10 12:07 rostring
+drwxr-xr-x  3 deepthought  deepthought   102 Mar 10 12:07 rstr_capitalizer
+
+/var/folders/_d/95dm4z8j5pg96y3ysw729hh00000gq/T/tmpETGQH_/user/ft_putstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1024 Mar 10 12:07 ft_putstr.c
+
+/var/folders/_d/95dm4z8j5pg96y3ysw729hh00000gq/T/tmpETGQH_/user/ft_rrange:
+total 8
+-rw-r--r--  1 deepthought  deepthought  2324 Mar 10 12:07 ft_rrange.c
+
+/var/folders/_d/95dm4z8j5pg96y3ysw729hh00000gq/T/tmpETGQH_/user/only_z:
+total 8
+-rw-r--r--  1 deepthought  deepthought  965 Mar 10 12:07 only_z.c
+
+/var/folders/_d/95dm4z8j5pg96y3ysw729hh00000gq/T/tmpETGQH_/user/print_bits:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1043 Mar 10 12:07 print_bits.c
+
+/var/folders/_d/95dm4z8j5pg96y3ysw729hh00000gq/T/tmpETGQH_/user/rostring:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1588 Mar 10 12:07 rostring.c
+
+/var/folders/_d/95dm4z8j5pg96y3ysw729hh00000gq/T/tmpETGQH_/user/rstr_capitalizer:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1969 Mar 10 12:07 rstr_capitalizer.c
+ 
+= rostring =====================================================================
+$> gcc -Wextra -Wall -Werror rostring.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./d8z9m6rtuvig1aufyoprywzn 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./zcejfg7ka1dr23p0nir4jroy 
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./herzq1g5uqu04dgydjkr5h0s "salut" "a" "tous" "tout" "le" "monde"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+--- user_output_test3	2018-03-10 12:07:14.000000000 +0100$
++++ test3.output	2018-03-10 12:07:14.000000000 +0100$
+@@ -1 +1 @@$
+-$
++salut$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================

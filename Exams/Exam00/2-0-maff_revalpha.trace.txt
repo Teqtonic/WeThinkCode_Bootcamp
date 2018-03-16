@@ -1,0 +1,72 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e2r10p23.42.fr
+Darwin 16.7.0 x86_64
+$> date
+Fri Feb 16 15:16:42 CET 2018
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.38)
+Target: x86_64-apple-darwin16.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.38)
+Target: x86_64-apple-darwin16.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/bootcamp-joburg-exam-00/exam_20180216/dkolev
+
+= Git history ==================================================================
+$> git -C /var/folders/fc/_yc0gz910gsdz_wmlzx2z6z40000gq/T/tmpT0tDUM/user log --pretty='%H - %an, %ad : %s'
+af4f4e65d02e95d537a881ecf96face9bdf64cf9 - Exam 42, Fri Feb 16 16:16:21 2018 +0200 : Assignment 3
+d701977800fef4fa9a862a971d8c41326c958aef - Exam 42, Fri Feb 16 16:04:12 2018 +0200 : Assignment 1 attempt 2
+680eab587634a2f2811e5dc8649d206af97e92fe - Exam 42, Fri Feb 16 15:43:28 2018 +0200 : Assignment 1
+d55b3180f1a96b8d7909a99a42cdba81220351d0 - Exam 42, Fri Feb 16 15:36:21 2018 +0200 : Assignment 0 attempt 2
+5acb72612947f72820f23ed2e0bb5889f1d38e8e - Exam 42, Fri Feb 16 15:30:37 2018 +0200 : Assignment 0
+7d7cdda60bc6310a384b3fc37cd3f5ae3d47f319 - Exam 42, Fri Feb 16 15:28:31 2018 +0200 : test staff
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/fc/_yc0gz910gsdz_wmlzx2z6z40000gq/T/tmpT0tDUM/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1422 Feb 16 15:16 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Feb 16 15:16 ft_countdown
+drwxr-xr-x  3 deepthought  deepthought   102 Feb 16 15:16 ft_print_numbers
+drwxr-xr-x  3 deepthought  deepthought   102 Feb 16 15:16 maff_revalpha
+drwxr-xr-x  3 deepthought  deepthought   102 Feb 16 15:16 only_a
+drwxr-xr-x  3 deepthought  deepthought   102 Feb 16 15:16 only_z
+
+/var/folders/fc/_yc0gz910gsdz_wmlzx2z6z40000gq/T/tmpT0tDUM/user/ft_countdown:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1056 Feb 16 15:16 ft_countdown.c
+
+/var/folders/fc/_yc0gz910gsdz_wmlzx2z6z40000gq/T/tmpT0tDUM/user/ft_print_numbers:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1091 Feb 16 15:16 ft_print_numbers.c
+
+/var/folders/fc/_yc0gz910gsdz_wmlzx2z6z40000gq/T/tmpT0tDUM/user/maff_revalpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1133 Feb 16 15:16 maff_revalpha.c
+
+/var/folders/fc/_yc0gz910gsdz_wmlzx2z6z40000gq/T/tmpT0tDUM/user/only_a:
+total 8
+-rw-r--r--  1 deepthought  deepthought  985 Feb 16 15:16 only_a.c
+
+/var/folders/fc/_yc0gz910gsdz_wmlzx2z6z40000gq/T/tmpT0tDUM/user/only_z:
+total 8
+-rw-r--r--  1 deepthought  deepthought  965 Feb 16 15:16 only_z.c
+ 
+= maff_revalpha ================================================================
+$> clang -Wextra -Wall -Werror maff_revalpha.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./0hhfm99wamh561ksmxvtd4f7
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

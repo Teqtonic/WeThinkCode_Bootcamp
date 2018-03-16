@@ -1,0 +1,5 @@
+Credentials cache: API:5031
+        Principal: dkolev@WETHINKCODE.CO.ZA
+
+  Issued                Expires               Principal
+Feb 12 13:21:04 2018  Feb 12 23:21:04 2018  krbtgt/WETHINKCODE.CO.ZA@WETHINKCODE.CO.ZA

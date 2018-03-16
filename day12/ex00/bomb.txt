@@ -1,0 +1,1 @@
+hello John, we are reading everything from this file !

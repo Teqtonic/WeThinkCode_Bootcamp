@@ -1,0 +1,4 @@
+dn: uid=dkolev
+changetype: modify
+replace: mobile
+mobile: 0799454916

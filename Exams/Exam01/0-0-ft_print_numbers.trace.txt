@@ -1,0 +1,47 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e2r11p11.42.fr
+Darwin 16.7.0 x86_64
+$> date
+Fri Feb 23 14:15:04 CET 2018
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.38)
+Target: x86_64-apple-darwin16.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.38)
+Target: x86_64-apple-darwin16.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/bootcamp-joburg-exam-01/exam_20180223/dkolev
+
+= Git history ==================================================================
+$> git -C /var/folders/8f/ls9zm8t12dq3942vrfnjf21r0000gq/T/tmpueGTc9/user log --pretty='%H - %an, %ad : %s'
+1313dcb856cd2bda20ee91f9714ba5220a202e26 - Exam 42, Fri Feb 23 15:14:44 2018 +0200 : Assignment 0
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/8f/ls9zm8t12dq3942vrfnjf21r0000gq/T/tmpueGTc9/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  246 Feb 23 14:15 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Feb 23 14:15 ft_print_numbers
+
+/var/folders/8f/ls9zm8t12dq3942vrfnjf21r0000gq/T/tmpueGTc9/user/ft_print_numbers:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1039 Feb 23 14:15 ft_print_numbers.c
+ 
+= ft_print_numbers =============================================================
+$> clang -Wextra -Wall -Werror main.c ft_print_numbers.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./pl75gdr49gcwx5zs5co7buta
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

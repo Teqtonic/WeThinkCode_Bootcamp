@@ -1,0 +1,59 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e3r5p9.42.fr
+Darwin 16.7.0 x86_64
+$> date
+Sat Mar 10 09:24:55 CET 2018
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin16.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin16.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/bootcamp-joburg-final-exam/exam_20180310/dkolev
+
+= Git history ==================================================================
+$> git -C /var/folders/h_/7mdpsvyd28q06q9x1qpzxsgm0000gq/T/tmpHoPheV/user log --pretty='%H - %an, %ad : %s'
+ebac665aeb8d1c5e68503107cb0176cf0198a019 - Exam 42, Sat Mar 10 10:21:16 2018 +0200 : Assignment 4
+e932c0e373161b20677c13a0ea6f90d3c3f5ab80 - Exam 42, Sat Mar 10 09:19:02 2018 +0200 : Assignment 3
+61b7c4818f82f44e04942d1abc80dd0691c14916 - Exam 42, Sat Mar 10 09:11:15 2018 +0200 : Assignment 1
+e9166aa2f17734c389ae8682c9102218130d3e18 - Exam 42, Sat Mar 10 09:05:19 2018 +0200 : Assignment 0
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/h_/7mdpsvyd28q06q9x1qpzxsgm0000gq/T/tmpHoPheV/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  944 Mar 10 09:24 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Mar 10 09:24 ft_putstr
+drwxr-xr-x  3 deepthought  deepthought  102 Mar 10 09:24 only_z
+drwxr-xr-x  3 deepthought  deepthought  102 Mar 10 09:24 print_bits
+drwxr-xr-x  3 deepthought  deepthought  102 Mar 10 09:24 rstr_capitalizer
+
+/var/folders/h_/7mdpsvyd28q06q9x1qpzxsgm0000gq/T/tmpHoPheV/user/ft_putstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1024 Mar 10 09:24 ft_putstr.c
+
+/var/folders/h_/7mdpsvyd28q06q9x1qpzxsgm0000gq/T/tmpHoPheV/user/only_z:
+total 8
+-rw-r--r--  1 deepthought  deepthought  965 Mar 10 09:24 only_z.c
+
+/var/folders/h_/7mdpsvyd28q06q9x1qpzxsgm0000gq/T/tmpHoPheV/user/print_bits:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1043 Mar 10 09:24 print_bits.c
+
+/var/folders/h_/7mdpsvyd28q06q9x1qpzxsgm0000gq/T/tmpHoPheV/user/rstr_capitalizer:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1969 Mar 10 09:24 rstr_capitalizer.c
+ 
+= ft_atoi_base =================================================================
+Nothing turned in
+Grade: 0
+
+= Final grade: 0 ===============================================================

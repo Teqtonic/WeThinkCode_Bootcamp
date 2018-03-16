@@ -1,0 +1,59 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e2r10p6.42.fr
+Darwin 16.7.0 x86_64
+$> date
+Sat Mar 10 08:19:15 CET 2018
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin16.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin16.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/bootcamp-joburg-final-exam/exam_20180310/dkolev
+
+= Git history ==================================================================
+$> git -C /var/folders/by/1kb5q0jn72d6kt6v7w2p4cpm0000gq/T/tmp6VMl1Y/user log --pretty='%H - %an, %ad : %s'
+e932c0e373161b20677c13a0ea6f90d3c3f5ab80 - Exam 42, Sat Mar 10 09:19:02 2018 +0200 : Assignment 3
+61b7c4818f82f44e04942d1abc80dd0691c14916 - Exam 42, Sat Mar 10 09:11:15 2018 +0200 : Assignment 1
+e9166aa2f17734c389ae8682c9102218130d3e18 - Exam 42, Sat Mar 10 09:05:19 2018 +0200 : Assignment 0
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/by/1kb5q0jn72d6kt6v7w2p4cpm0000gq/T/tmp6VMl1Y/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  685 Mar 10 08:19 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Mar 10 08:19 ft_putstr
+drwxr-xr-x  3 deepthought  deepthought  102 Mar 10 08:19 only_z
+drwxr-xr-x  3 deepthought  deepthought  102 Mar 10 08:19 print_bits
+
+/var/folders/by/1kb5q0jn72d6kt6v7w2p4cpm0000gq/T/tmp6VMl1Y/user/ft_putstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1024 Mar 10 08:19 ft_putstr.c
+
+/var/folders/by/1kb5q0jn72d6kt6v7w2p4cpm0000gq/T/tmp6VMl1Y/user/only_z:
+total 8
+-rw-r--r--  1 deepthought  deepthought  965 Mar 10 08:19 only_z.c
+
+/var/folders/by/1kb5q0jn72d6kt6v7w2p4cpm0000gq/T/tmp6VMl1Y/user/print_bits:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1043 Mar 10 08:19 print_bits.c
+ 
+= print_bits ===================================================================
+$> clang -Wextra -Wall -Werror main.c print_bits.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./izr8mr58ijaoc7zc9xjrc9nt
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

@@ -1,0 +1,100 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e3r11p3.42.fr
+Darwin 16.7.0 x86_64
+$> date
+Sat Mar 10 09:21:35 CET 2018
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin16.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+Target: x86_64-apple-darwin16.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2018/bootcamp-joburg-final-exam/exam_20180310/dkolev
+
+= Git history ==================================================================
+$> git -C /var/folders/0b/tqfxqkm966dgyrb8qj66nvc40000gq/T/tmpRRx5Va/user log --pretty='%H - %an, %ad : %s'
+ebac665aeb8d1c5e68503107cb0176cf0198a019 - Exam 42, Sat Mar 10 10:21:16 2018 +0200 : Assignment 4
+e932c0e373161b20677c13a0ea6f90d3c3f5ab80 - Exam 42, Sat Mar 10 09:19:02 2018 +0200 : Assignment 3
+61b7c4818f82f44e04942d1abc80dd0691c14916 - Exam 42, Sat Mar 10 09:11:15 2018 +0200 : Assignment 1
+e9166aa2f17734c389ae8682c9102218130d3e18 - Exam 42, Sat Mar 10 09:05:19 2018 +0200 : Assignment 0
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/0b/tqfxqkm966dgyrb8qj66nvc40000gq/T/tmpRRx5Va/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  944 Mar 10 09:21 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Mar 10 09:21 ft_putstr
+drwxr-xr-x  3 deepthought  deepthought  102 Mar 10 09:21 only_z
+drwxr-xr-x  3 deepthought  deepthought  102 Mar 10 09:21 print_bits
+drwxr-xr-x  3 deepthought  deepthought  102 Mar 10 09:21 rstr_capitalizer
+
+/var/folders/0b/tqfxqkm966dgyrb8qj66nvc40000gq/T/tmpRRx5Va/user/ft_putstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1024 Mar 10 09:21 ft_putstr.c
+
+/var/folders/0b/tqfxqkm966dgyrb8qj66nvc40000gq/T/tmpRRx5Va/user/only_z:
+total 8
+-rw-r--r--  1 deepthought  deepthought  965 Mar 10 09:21 only_z.c
+
+/var/folders/0b/tqfxqkm966dgyrb8qj66nvc40000gq/T/tmpRRx5Va/user/print_bits:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1043 Mar 10 09:21 print_bits.c
+
+/var/folders/0b/tqfxqkm966dgyrb8qj66nvc40000gq/T/tmpRRx5Va/user/rstr_capitalizer:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1969 Mar 10 09:21 rstr_capitalizer.c
+ 
+= rstr_capitalizer =============================================================
+$> clang -Wextra -Wall -Werror rstr_capitalizer.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./dwb9itk8hh7mh6xyyytdmibo 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./yn37slpsvd5u89ylaa8xcy62 
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./fs2dduw3acqs208c4e74zp00 "zFAPh42"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./drs8f0fyuzesp364f3tviyet "	 ictVdUW0F EJkuXixg7zPnw@K8YeXabcnZF2yADom 48LVHC6nN0ZjR7yuFmWILOH73X7WFn0Nvai	Eiq5hSIO2)"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./c02ihya3y122g6a0m17ifnr4 ">HZlG6tiCz39jSc5."
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./vx6lzq5rgn3x030wfwveemgv "1mjXE	 	 )wC8SyoI8W0Yyp8nxeoO5Z4wX	1PJcvhjqoI	6"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./1cl1fwi6xyfb8eh3o5u9t20q "*BUthLW2kmZd9Cz(RZJGi480Lx7ysDWf)"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+--- user_output_test7	2018-03-10 09:21:40.000000000 +0100$
++++ test7.output	2018-03-10 09:21:39.000000000 +0100$
+@@ -1 +1 @@$
+-*buthlw2kmzd9cZ(rzjgi480lx7ysdwF)$
++*buthlw2kmzd9cz(rzjgi480lx7ysdwf)$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================
